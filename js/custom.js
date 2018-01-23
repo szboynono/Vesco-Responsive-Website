@@ -68,3 +68,30 @@ $(function () {
         autoplayHoverPause: true
     });
 });
+
+/* ===============
+    Navigation
+==============*/
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 50) {
+            //hide nav
+            $('nav').removeClass('vesco-top-nav');
+        } else {
+            //show nav
+            $('nav').addClass('vesco-top-nav');
+        }
+    });
+});
+
+//Smothing Scrolling
+$(function () {
+    $('a.smooth-scroll').click(function (event) {
+        event.preventDefault();
+        //get all return id like #about
+        let section = $(this).attr("href");
+        $('html,body').animate({
+            scrollTop: $(section).offset().top
+        }, 1250);
+    });
+});
