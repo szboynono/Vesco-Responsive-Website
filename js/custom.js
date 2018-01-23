@@ -75,7 +75,6 @@ $(function () {
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() < 50) {
-            console.log('wow');
             //hide nav
             $('nav').removeClass('vesco-top-nav');
         } else {
