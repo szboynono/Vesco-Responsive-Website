@@ -77,9 +77,11 @@ $(function () {
         if ($(this).scrollTop() < 50) {
             //hide nav
             $('nav').removeClass('vesco-top-nav');
+            $('#back-to-top').fadeOut();
         } else {
             //show nav
             $('nav').addClass('vesco-top-nav');
+            $('#back-to-top').fadeIn();
         }
     });
 });
@@ -91,7 +93,14 @@ $(function () {
         //get all return id like #about
         let section = $(this).attr("href");
         $('html,body').animate({
-            scrollTop: $(section).offset().top
-        }, 1250);
+            scrollTop: $(section).offset().top - 64
+        }, 1250, "easeInOutExpo");
     });
+});
+
+//Close mobile menu on click
+$(function(){
+  $('.navbar-collapse ul li a').on('click touch',function(){
+    $('.navbar-toggle').click();
+  });
 });
