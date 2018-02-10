@@ -95,7 +95,9 @@ ul, ol {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+       -o-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
 .btn-white {
@@ -201,6 +203,8 @@ ul, ol {
 .service-item:hover .service-item-icon i {
   color: #fff;
   background-color: #34c6d3;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
 
@@ -272,11 +276,18 @@ ul, ol {
 }
 
 .img-wrapper img {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  -o-transition: transform .5s ease;
   transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 .img-wrapper img:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
 
