@@ -1,6 +1,6 @@
-$(function do() {
-  console.log('yo');
-});
+do(){
+  console.log("asd");
+}
 
 /* ===============
     Services
