@@ -123,6 +123,14 @@ $(function() {
   });
 });
 
+myFuntion() {
+    console.log('clicked');
+    ga('send', 'event', {
+    eventCategory: 'Outbound Link',
+    eventAction: 'click',
+    eventLabel: event.target.href
+  });
+
 //Close mobile menu on click
 $(function() {
   $('.navbar-collapse ul li a').on('click touch', function() {
