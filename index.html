@@ -39,6 +39,15 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-121798569-1');
+  
+  myFunction() {
+    ga('send', 'event', {
+    eventCategory: 'Outbound Link',
+    eventAction: 'click',
+    eventLabel: event.target.href
+  });
+
+  }
 </script>
 
 
@@ -101,6 +110,8 @@
     </nav>
   </header>
   <!-- navigation END -->
+  
+  <button class="btn btn-primary" onclick="myFuntion()">Google Send</button>
 
   <!-- HOME -->
   <section id="home">
