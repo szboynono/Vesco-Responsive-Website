@@ -40,7 +40,8 @@
 
   gtag('config', 'UA-121798569-1');
   
-  myFunction() {
+  myFuntion() {
+    console.log('clicked');
     ga('send', 'event', {
     eventCategory: 'Outbound Link',
     eventAction: 'click',
@@ -111,7 +112,7 @@
   </header>
   <!-- navigation END -->
   
-  <button class="btn btn-primary" onclick="myFuntion()">Google Send</button>
+  
 
   <!-- HOME -->
   <section id="home">
@@ -122,6 +123,7 @@
             <h3>Watch out<br> The Modern Responsive Website</h3>
           </div>
           <div id="home-btn" class="animated zoomIn">
+            <button class="btn btn-primary" onclick="myFuntion()">Google Send</button>
             <a href="#work" class="btn btn-lg btn-general btn-white smooth-scroll" role="button" title="View Our Work">View Our Work</a>
           </div>
         </div>
