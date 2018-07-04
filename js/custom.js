@@ -1,5 +1,5 @@
 $(function do() {
-  alert("working")
+  console.log('yo');
 });
 
 /* ===============
