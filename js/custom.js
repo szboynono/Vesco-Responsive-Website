@@ -1,3 +1,7 @@
+$(function do() {
+  alert("working")
+});
+
 /* ===============
     Services
 ==============*/
