@@ -51,7 +51,7 @@ ga('send', 'pageview');
   gtag('js', new Date());
 
   gtag('config', 'UA-121798569-1');
-  
+  gtag('event', 'login', {'method': 'Google'});
   
 
   
@@ -887,7 +887,9 @@ ga('send', 'pageview');
 <script>
 function myFunction() {
   console.log("sdad");
-  ga('send', 'event', 'Videos', 'play', 'Fall Campaign');
+  gtag('event', 'login', {'method': 'Google'});
+  gtag('send', 'event', 'Videos', 'play', 'Fall Campaign');
+  
 }
 </script>
 
