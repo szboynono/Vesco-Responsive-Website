@@ -1,3 +1,6 @@
+
+
+$(
 function handleOutboundLinkClicks(event) {
   console.log('clicked');
   ga('send', 'event', {
@@ -6,6 +9,7 @@ function handleOutboundLinkClicks(event) {
     eventLabel: event.target.href
   });
 }
+);
 
 /* ===============
     Services
