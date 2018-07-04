@@ -1,4 +1,5 @@
 function handleOutboundLinkClicks(event) {
+  console.log('clicked');
   ga('send', 'event', {
     eventCategory: 'Outbound Link',
     eventAction: 'click',
