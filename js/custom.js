@@ -1,4 +1,4 @@
-do(){
+function do(){
   console.log("asd");
 }
 
